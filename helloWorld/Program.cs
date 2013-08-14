@@ -13,7 +13,9 @@ namespace helloWorld
             Console.WriteLine("Hello World");
             Console.WriteLine("Enter your name");
             string input = Console.ReadLine();
-            Console.WriteLine("Hello" + input);
+            Name name = new Name();
+            name.Name = input;
+            Console.WriteLine("Hello " + name.Name);
             Console.ReadKey();
         }
     }
